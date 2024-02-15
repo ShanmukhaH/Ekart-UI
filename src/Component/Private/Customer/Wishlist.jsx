@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Login = () => {
+const Wishlist = () => {
   return (
     <div>
-      LOgin open
+      
     </div>
   )
 }
 
-export default Login
+export default Wishlist
