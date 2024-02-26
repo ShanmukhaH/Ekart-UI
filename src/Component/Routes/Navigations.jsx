@@ -11,6 +11,7 @@ import Order from '../Private/Customer/Order'
 import Wishlist from '../Private/Customer/Wishlist'
 import SellerDashboard from '../Private/Seller/SellerDashboard'
 import SellerOrder from '../Private/Seller/SellerOrder'
+import LogOut from '../Private/Common/LogOut'
 
 const navs =[
 
@@ -32,6 +33,13 @@ const navs =[
   {
     path: "/login",
     element: <Login />,
+    requireAuth: false,
+    isVisibleAfterAuth: false,
+    role: "ALL",
+  },
+  {
+    path: "/logout",
+    element: <LogOut/>,
     requireAuth: false,
     isVisibleAfterAuth: false,
     role: "ALL",

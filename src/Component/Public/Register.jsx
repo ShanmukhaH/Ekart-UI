@@ -28,7 +28,7 @@ const Register = ({ role }) => {
     try {
       const response = await axios.post(URL, body, header);
       console.log(response);
-      sessionStorage.setItem('email', username); // Store email in session storage
+      sessionStorage.setItem('email', username);      // Store email in session storage
       navigate("/verify-otp");
     } catch (error) {
       console.log(error);
@@ -58,14 +58,14 @@ const Register = ({ role }) => {
           placeholder="email address"
           onChange={(event) => setUsername(event.target.value)}
           className="p-2 border-2 border-gray-500 w-80 h-10 rounded-xl "
-        />{" "}
+        />
         <br />
         <input
           type="text"
           placeholder="password"
           onChange={(event) => setPassword(event.target.value)}
           className="p-2 border-2 border-gray-500  w-80 h-10 rounded-xl"
-        />{" "}
+        />
         <br />
         <button
           onClick={handleregistation}
